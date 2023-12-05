@@ -32,7 +32,7 @@ export default function Create() {
 
   return (
     <div className="App">
-      <h1>Create</h1>
+      <h1>Create A New Customer</h1>
 
       <input
         placeholder="name"
@@ -40,14 +40,17 @@ export default function Create() {
         name="name"
         value={user.name}
       />
+      <br></br>
       <input
         placeholder="last name"
         onChange={handleChange}
         name="lastName"
         value={user.lastName}
       />
+      <br></br>
 
-      <button onClick={saveData}>Save to MongoDB</button>
+      <button onClick={saveData}>Save</button>
+      <br></br>
       <button onClick={() => navigate(-1)}>Back</button>
     </div>
   );
